@@ -63,7 +63,7 @@ function sortWordCount(wordCounts){
 }
 
 function showDataInTable(wordCounts){
-    let table= $('#table');
+    let table= $('#zipf-table');
     table.empty();
     wordCounts.forEach((w)=>{
         table.append($(`<tr>`)

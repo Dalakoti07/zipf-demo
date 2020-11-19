@@ -1,10 +1,10 @@
-.main-container{
+.zipf-container{
     width: 100%;
     height: fit-content;
     display: flex;
 }
 
-#table{
+#zipf-table{
     width: 100px;
     float: left;
 }
