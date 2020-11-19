@@ -1,3 +1,16 @@
+.main-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+#table{
+    width: 100px;
+    float: left;
+}
+
 #chart-canvas{
+    width: 800;
+    height: 800;
     background-color: beige;
 }

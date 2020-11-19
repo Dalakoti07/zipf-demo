@@ -84,9 +84,20 @@ function generateChart(wordFrequency){
               label: 'Word Freq',
               borderColor: 'rgb(255, 99, 132)',
               data: wordFrequency.map((w)=> w.count)
-            }]
+            },{
+                label: 'Ideal Graph',
+                borderColor: 'rgb(12, 116, 196)',
+                data: getIdealValues(wordFrequency[0].count)
+              }
+            ]
         }
     });
+}
 
-    // let idealChart= new Chart()
+function getIdealValues(highestValue){
+    let idealValues=[]
+    for(let i=1;i<=50;i++){
+        idealValues.push(highestValue/i);
+    }
+    return idealValues;
 }
