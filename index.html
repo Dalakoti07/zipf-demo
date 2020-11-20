@@ -10,7 +10,7 @@
     <script src="jquery.js"></script>
     <script async defer src="index.js"></script>
     <script src="chart.js"></script>
-    <title>Zif's Log</title>
+    <title>Zipf's Log</title>
 </head>
 <body>
     
@@ -21,23 +21,16 @@
         </div>
     </div>
     
-    <div class="container">
-        <div class="form-group">
-            <label for="textInput">Paste the Text Here</label>
-            <textarea class="form-control" id="textArea" cols="80" rows="30"></textarea>    
-        </div>    
-    </div>
-
-    <br>
-
-    <button type="button" class="btn btn-primary mx-auto" id="btnCalculate">Calculate</button>
-
-    <br>
-
     <div class="zipf-container">
-        <table class="table table-bordered" border="1" cellpadding="2" id="zipf-table"></table>
-
-        <canvas id="chart-canvas"></canvas>
+        <div class="form-group input-div">
+            <label class="label-text" for="textInput">Paste the Text Here</label>
+            <textarea class="form-control" id="textArea" cols="50" rows="30"></textarea>    
+            <button type="button" class="btn btn-primary mx-auto" id="btnCalculate">Calculate</button>
+        </div>
+        <table class="table table-bordered" id="zipf-table"></table>
+        <div class="chart-div">
+            <canvas id="chart-canvas"></canvas>
+        </div>
     </div>
 
     <!-- adding modal -->

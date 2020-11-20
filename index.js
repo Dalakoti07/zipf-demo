@@ -66,7 +66,7 @@ function sortWordCount(wordCounts){
             count: wordCounts[w]
         })
     })
-    return wordCountArray.sort((a,b)=> b.count-a.count).slice(0,50);
+    return wordCountArray.sort((a,b)=> b.count-a.count).slice(0,30);
 }
 
 function showDataInTable(wordCounts){
