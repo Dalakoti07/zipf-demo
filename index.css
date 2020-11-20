@@ -9,6 +9,10 @@
     float: left;
 }
 
+#btnCalculate{
+    border: 1px solid black;
+}
+
 #chart-canvas{
     width: 800;
     height: 800;

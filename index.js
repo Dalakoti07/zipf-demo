@@ -1,6 +1,13 @@
 $('#btnCalculate').click(()=>{
     let text=$('#textArea').val();
 
+    if(text.length<=100){
+        //lauch modal
+        let modal=$(`#info-model`);
+        modal.modal()
+        return;
+    }
+
     allWords= getWords(text);
     let wordCount= getWordsCount(allWords);
     let sortedWordCount= sortWordCount(wordCount);
