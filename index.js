@@ -72,6 +72,11 @@ function sortWordCount(wordCounts){
 function showDataInTable(wordCounts){
     let table= $('#zipf-table');
     table.empty();
+    table.append($(`thead`)).append($(`<tr>`)
+                .append($(`<th>`).text('Word'))
+                .append($(`<th>`).text('Frequency'))
+            )
+
     wordCounts.forEach((w)=>{
         table.append($(`<tr>`)
                 .append($(`<td>`).text(w.word))
